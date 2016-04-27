@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WlP-Jw-73U">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="9rA-ft-FVB">
+            <objects>
+                <navigationController id="WlP-Jw-73U" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xdk-hK-mjo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ige-QL-jBk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B9z-GE-0Ow" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-494" y="302"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PizzApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +33,196 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido a PizzApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdf-Ez-S2k">
+                                <rect key="frame" x="218" y="112" width="165" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hze-1r-6Lx">
+                                <rect key="frame" x="200" y="242" width="200" height="30"/>
+                                <state key="normal" title="Comenzar a crear tu pizza🍕"/>
+                                <connections>
+                                    <segue destination="RJW-r5-JPE" kind="show" id="gKZ-sv-R7V"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hze-1r-6Lx" secondAttribute="bottom" constant="328" id="2oM-5T-77h"/>
+                            <constraint firstItem="bdf-Ez-S2k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Q9-aL-Qel"/>
+                            <constraint firstItem="hze-1r-6Lx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kqa-cU-kFq"/>
+                            <constraint firstItem="bdf-Ez-S2k" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="48" id="LZ6-at-HZG"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Dsa-L1-x1p"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="302"/>
+        </scene>
+        <!--Etapa1-->
+        <scene sceneID="NEO-QM-yEa">
+            <objects>
+                <viewController id="RJW-r5-JPE" customClass="Etapa1" customModule="PizzApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="62S-qb-TRp"/>
+                        <viewControllerLayoutGuide type="bottom" id="dQg-xy-GEm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="njf-ji-S80">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona el tamaño de tu pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SpQ-4X-74D">
+                                <rect key="frame" x="175" y="62" width="251" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ePD-kz-wtJ">
+                                <rect key="frame" x="0.0" y="131" width="600" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vop-ty-ew4">
+                                <rect key="frame" x="268" y="403" width="64" height="30"/>
+                                <state key="normal" title="Siguiente"/>
+                                <connections>
+                                    <segue destination="Pcm-Uv-qBR" kind="show" identifier="" id="mkw-kN-v4g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ePD-kz-wtJ" firstAttribute="centerX" secondItem="njf-ji-S80" secondAttribute="centerX" id="1e9-BP-uj3"/>
+                            <constraint firstItem="ePD-kz-wtJ" firstAttribute="leading" secondItem="njf-ji-S80" secondAttribute="leading" id="Cjn-3v-KnA"/>
+                            <constraint firstItem="Vop-ty-ew4" firstAttribute="centerX" secondItem="njf-ji-S80" secondAttribute="centerX" id="WYh-b5-ZLj"/>
+                            <constraint firstItem="SpQ-4X-74D" firstAttribute="centerX" secondItem="njf-ji-S80" secondAttribute="centerX" id="Zgv-OI-Tds"/>
+                            <constraint firstItem="Vop-ty-ew4" firstAttribute="top" secondItem="ePD-kz-wtJ" secondAttribute="bottom" constant="56" id="jc2-hD-UKZ"/>
+                            <constraint firstItem="SpQ-4X-74D" firstAttribute="top" secondItem="62S-qb-TRp" secondAttribute="bottom" constant="42" id="loR-2N-M55"/>
+                            <constraint firstItem="ePD-kz-wtJ" firstAttribute="top" secondItem="SpQ-4X-74D" secondAttribute="bottom" constant="48" id="v20-rz-DJr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pickerTamaño" destination="ePD-kz-wtJ" id="tZi-HL-hBR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2gR-bN-6Ft" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951" y="302"/>
+        </scene>
+        <!--Etapa2-->
+        <scene sceneID="n2Z-jN-QdY">
+            <objects>
+                <viewController id="Pcm-Uv-qBR" customClass="Etapa2" customModule="PizzApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ua2-4Z-6JO"/>
+                        <viewControllerLayoutGuide type="bottom" id="myy-xx-WPO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7IV-xw-UiX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona el tipo de masa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwf-HZ-cbB">
+                                <rect key="frame" x="198" y="83" width="204" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5wL-od-jBc">
+                                <rect key="frame" x="-79" y="163" width="758" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fQ-ff-AEx">
+                                <rect key="frame" x="268" y="434" width="64" height="30"/>
+                                <state key="normal" title="Siguiente"/>
+                                <connections>
+                                    <segue destination="wtt-TU-NpG" kind="show" identifier="segue3" id="Vnt-IB-Ijs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9fQ-ff-AEx" firstAttribute="centerX" secondItem="7IV-xw-UiX" secondAttribute="centerX" id="5PD-SE-iAd"/>
+                            <constraint firstItem="5wL-od-jBc" firstAttribute="centerX" secondItem="7IV-xw-UiX" secondAttribute="centerX" id="6FU-Ya-eIv"/>
+                            <constraint firstItem="9fQ-ff-AEx" firstAttribute="top" secondItem="5wL-od-jBc" secondAttribute="bottom" constant="55" id="RBb-gw-Fr9"/>
+                            <constraint firstItem="rwf-HZ-cbB" firstAttribute="centerX" secondItem="7IV-xw-UiX" secondAttribute="centerX" id="RqY-sd-pHI"/>
+                            <constraint firstItem="rwf-HZ-cbB" firstAttribute="top" secondItem="ua2-4Z-6JO" secondAttribute="bottom" constant="19" id="Tl2-w9-Ofc"/>
+                            <constraint firstItem="5wL-od-jBc" firstAttribute="leading" secondItem="7IV-xw-UiX" secondAttribute="leadingMargin" constant="-99" id="dqg-Vg-98e"/>
+                            <constraint firstItem="5wL-od-jBc" firstAttribute="top" secondItem="rwf-HZ-cbB" secondAttribute="bottom" constant="59" id="lyD-M8-yEx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pickerMasa" destination="5wL-od-jBc" id="ZYv-m9-tw5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fwq-dV-wOc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1632" y="302"/>
+        </scene>
+        <!--Etapa3-->
+        <scene sceneID="TjZ-bI-ddA">
+            <objects>
+                <viewController id="wtt-TU-NpG" customClass="Etapa3" customModule="PizzApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Swy-d9-l47"/>
+                        <viewControllerLayoutGuide type="bottom" id="2zv-Zx-Rzp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ziF-h0-ptV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona el tipo de queso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEo-nI-aiZ">
+                                <rect key="frame" x="195" y="84" width="210" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dio-Iw-gTk">
+                                <rect key="frame" x="-63" y="176" width="726" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBF-SW-d6C">
+                                <rect key="frame" x="268" y="441" width="64" height="30"/>
+                                <state key="normal" title="Siguiente"/>
+                                <connections>
+                                    <segue destination="22m-by-e7w" kind="show" identifier="segue4" id="9aT-ZX-s9z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dio-Iw-gTk" firstAttribute="top" secondItem="yEo-nI-aiZ" secondAttribute="bottom" constant="71" id="05R-fr-jpA"/>
+                            <constraint firstItem="Dio-Iw-gTk" firstAttribute="centerX" secondItem="ziF-h0-ptV" secondAttribute="centerX" id="4Lk-uj-3Ny"/>
+                            <constraint firstItem="wBF-SW-d6C" firstAttribute="centerX" secondItem="ziF-h0-ptV" secondAttribute="centerX" id="BLx-yA-kAZ"/>
+                            <constraint firstItem="Dio-Iw-gTk" firstAttribute="leading" secondItem="ziF-h0-ptV" secondAttribute="leadingMargin" constant="-83" id="BVf-IF-U1B"/>
+                            <constraint firstItem="yEo-nI-aiZ" firstAttribute="centerX" secondItem="ziF-h0-ptV" secondAttribute="centerX" id="Qg3-Uu-f16"/>
+                            <constraint firstItem="wBF-SW-d6C" firstAttribute="top" secondItem="Dio-Iw-gTk" secondAttribute="bottom" constant="49" id="UV2-Fh-dPp"/>
+                            <constraint firstItem="yEo-nI-aiZ" firstAttribute="top" secondItem="Swy-d9-l47" secondAttribute="bottom" constant="20" id="mJg-jm-67F"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pickerQueso" destination="Dio-Iw-gTk" id="01F-aM-scb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="35l-75-fyP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2283" y="302"/>
+        </scene>
+        <!--Etapa4-->
+        <scene sceneID="mua-85-8UB">
+            <objects>
+                <viewController id="22m-by-e7w" customClass="Etapa4" customModule="PizzApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bqV-7l-Cf5"/>
+                        <viewControllerLayoutGuide type="bottom" id="qGV-Lr-jTf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Qe-6i-EOi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7t3-3V-HFl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2283" y="1013"/>
         </scene>
     </scenes>
 </document>

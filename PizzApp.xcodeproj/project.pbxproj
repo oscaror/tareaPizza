@@ -12,6 +12,10 @@
 		49BE0A721CD149F000459DAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49BE0A701CD149F000459DAE /* Main.storyboard */; };
 		49BE0A741CD149F000459DAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49BE0A731CD149F000459DAE /* Assets.xcassets */; };
 		49BE0A771CD149F000459DAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49BE0A751CD149F000459DAE /* LaunchScreen.storyboard */; };
+		49BE0A7F1CD14EFF00459DAE /* Etapa1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE0A7E1CD14EFF00459DAE /* Etapa1.swift */; };
+		49BE0A811CD1590900459DAE /* Etapa2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE0A801CD1590900459DAE /* Etapa2.swift */; };
+		49BE0A831CD167CF00459DAE /* Etapa3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE0A821CD167CF00459DAE /* Etapa3.swift */; };
+		49BE0A851CD16F3000459DAE /* Etapa4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE0A841CD16F3000459DAE /* Etapa4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		49BE0A731CD149F000459DAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49BE0A761CD149F000459DAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49BE0A781CD149F000459DAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49BE0A7E1CD14EFF00459DAE /* Etapa1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Etapa1.swift; sourceTree = "<group>"; };
+		49BE0A801CD1590900459DAE /* Etapa2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Etapa2.swift; sourceTree = "<group>"; };
+		49BE0A821CD167CF00459DAE /* Etapa3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Etapa3.swift; sourceTree = "<group>"; };
+		49BE0A841CD16F3000459DAE /* Etapa4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Etapa4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				49BE0A731CD149F000459DAE /* Assets.xcassets */,
 				49BE0A751CD149F000459DAE /* LaunchScreen.storyboard */,
 				49BE0A781CD149F000459DAE /* Info.plist */,
+				49BE0A7E1CD14EFF00459DAE /* Etapa1.swift */,
+				49BE0A801CD1590900459DAE /* Etapa2.swift */,
+				49BE0A821CD167CF00459DAE /* Etapa3.swift */,
+				49BE0A841CD16F3000459DAE /* Etapa4.swift */,
 			);
 			path = PizzApp;
 			sourceTree = "<group>";
@@ -135,8 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49BE0A851CD16F3000459DAE /* Etapa4.swift in Sources */,
+				49BE0A811CD1590900459DAE /* Etapa2.swift in Sources */,
+				49BE0A7F1CD14EFF00459DAE /* Etapa1.swift in Sources */,
 				49BE0A6F1CD149F000459DAE /* ViewController.swift in Sources */,
 				49BE0A6D1CD149EF00459DAE /* AppDelegate.swift in Sources */,
+				49BE0A831CD167CF00459DAE /* Etapa3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
