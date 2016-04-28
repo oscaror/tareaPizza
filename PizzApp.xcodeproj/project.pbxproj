@@ -16,6 +16,7 @@
 		49BE0A811CD1590900459DAE /* Etapa2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE0A801CD1590900459DAE /* Etapa2.swift */; };
 		49BE0A831CD167CF00459DAE /* Etapa3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE0A821CD167CF00459DAE /* Etapa3.swift */; };
 		49BE0A851CD16F3000459DAE /* Etapa4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE0A841CD16F3000459DAE /* Etapa4.swift */; };
+		49BE0A871CD17F5200459DAE /* Etapa5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE0A861CD17F5200459DAE /* Etapa5.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		49BE0A801CD1590900459DAE /* Etapa2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Etapa2.swift; sourceTree = "<group>"; };
 		49BE0A821CD167CF00459DAE /* Etapa3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Etapa3.swift; sourceTree = "<group>"; };
 		49BE0A841CD16F3000459DAE /* Etapa4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Etapa4.swift; sourceTree = "<group>"; };
+		49BE0A861CD17F5200459DAE /* Etapa5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Etapa5.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				49BE0A801CD1590900459DAE /* Etapa2.swift */,
 				49BE0A821CD167CF00459DAE /* Etapa3.swift */,
 				49BE0A841CD16F3000459DAE /* Etapa4.swift */,
+				49BE0A861CD17F5200459DAE /* Etapa5.swift */,
 			);
 			path = PizzApp;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49BE0A871CD17F5200459DAE /* Etapa5.swift in Sources */,
 				49BE0A851CD16F3000459DAE /* Etapa4.swift in Sources */,
 				49BE0A811CD1590900459DAE /* Etapa2.swift in Sources */,
 				49BE0A7F1CD14EFF00459DAE /* Etapa1.swift in Sources */,

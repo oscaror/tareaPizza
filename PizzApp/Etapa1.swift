@@ -23,7 +23,7 @@ class Etapa1: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         self.pickerTamaño.dataSource = self
         
         //Datos del pickerView
-        pickerData = ["Chica", "Mediana", "Grande"]
+        pickerData = ["", "Chica", "Mediana", "Grande"]
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,10 +54,35 @@ class Etapa1: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        let sigVista = segue.destinationViewController as! Etapa2
-        sigVista.tamaño = tamaño
+        if (tamaño == ""){
+            showSimpleAlert()
+        }
+        else {
+            let sigVista = segue.destinationViewController as! Etapa2
+            sigVista.tamaño = tamaño
+        }
     }
+    
+    
+    /// Show an alert with an "Okay" button.
+    func showSimpleAlert() {
+        let title = NSLocalizedString("Error", comment: "")
+        let message = NSLocalizedString("No se seleciono el tamaño de la pizza", comment: "")
+        let cancelButtonTitle = NSLocalizedString("OK", comment: "")
+        
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+        
+        // Create the action.
+        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .Cancel) { action in
+            NSLog("The simple alert's cancel action occured.")
+        }
+        
+        // Add the action.
+        alertController.addAction(cancelAction)
+        
+        presentViewController(alertController, animated: true, completion: nil)
+    }
+
 
     /*
     // MARK: - Navigation

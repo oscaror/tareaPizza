@@ -206,6 +206,24 @@
             </objects>
             <point key="canvasLocation" x="2283" y="302"/>
         </scene>
+        <!--Etapa5-->
+        <scene sceneID="WtX-1j-Sqz">
+            <objects>
+                <viewController id="lrq-Sy-CCe" customClass="Etapa5" customModule="PizzApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uzs-kR-4Sd"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zzo-bH-gmO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jdf-zf-NTp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4zz-Mw-OKM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1632" y="1013"/>
+        </scene>
         <!--Etapa4-->
         <scene sceneID="mua-85-8UB">
             <objects>
@@ -217,8 +235,38 @@
                     <view key="view" contentMode="scaleToFill" id="5Qe-6i-EOi">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona los ingredientes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSi-Vb-X81">
+                                <rect key="frame" x="196" y="81" width="209" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nz6-QZ-3Wv">
+                                <rect key="frame" x="0.0" y="180" width="600" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w47-9q-zvZ">
+                                <rect key="frame" x="277" y="429" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="lrq-Sy-CCe" kind="show" identifier="segue5" id="m0e-T2-cN3"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w47-9q-zvZ" firstAttribute="centerX" secondItem="5Qe-6i-EOi" secondAttribute="centerX" id="J1s-sL-j9l"/>
+                            <constraint firstItem="w47-9q-zvZ" firstAttribute="top" secondItem="nz6-QZ-3Wv" secondAttribute="bottom" constant="33" id="WxK-sR-cjT"/>
+                            <constraint firstItem="nz6-QZ-3Wv" firstAttribute="leading" secondItem="5Qe-6i-EOi" secondAttribute="leading" id="XgN-H3-hxr"/>
+                            <constraint firstItem="nz6-QZ-3Wv" firstAttribute="top" secondItem="kSi-Vb-X81" secondAttribute="bottom" constant="78" id="cf7-Ur-S8y"/>
+                            <constraint firstItem="nz6-QZ-3Wv" firstAttribute="centerX" secondItem="5Qe-6i-EOi" secondAttribute="centerX" id="hhz-gY-WjL"/>
+                            <constraint firstItem="kSi-Vb-X81" firstAttribute="top" secondItem="bqV-7l-Cf5" secondAttribute="bottom" constant="17" id="iXQ-Zq-IJf"/>
+                            <constraint firstItem="kSi-Vb-X81" firstAttribute="centerX" secondItem="5Qe-6i-EOi" secondAttribute="centerX" id="pe4-wx-Mrk"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pickerIngredientes" destination="nz6-QZ-3Wv" id="D0c-EJ-fxh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7t3-3V-HFl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
