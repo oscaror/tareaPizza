@@ -55,10 +55,40 @@ class Etapa5: UIViewController {
     
     
     @IBAction func confirmacion() {
-        showSimpleAlert()
+        showOkayCancelAlert()
+        //showSimpleAlert()
         confirmar.hidden = true
         navigationItem.hidesBackButton = true
     }
+    
+    /// Show an alert with an "Okay" and "Cancel" button.
+    func showOkayCancelAlert() {
+        let title = NSLocalizedString("Confirmación", comment: "")
+        let message = NSLocalizedString("Estas a punto de ordenar tu pizza, deseas continuar?", comment: "")
+        let cancelButtonTitle = NSLocalizedString("Cancelar", comment: "")
+        let otherButtonTitle = NSLocalizedString("OK", comment: "")
+        
+        let alertCotroller = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+        
+        // Create the actions.
+        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .Cancel) { _ in
+            NSLog("The \"Okay/Cancel\" alert's cancel action occured.")
+        }
+        
+        let otherAction = UIAlertAction(title: otherButtonTitle, style: .Default) { _ in
+            NSLog("The \"Okay/Cancel\" alert's other action occured.")
+            self.showSimpleAlert()
+            
+        }
+        
+        // Add the actions.
+        alertCotroller.addAction(cancelAction)
+        alertCotroller.addAction(otherAction)
+        
+        presentViewController(alertCotroller, animated: true, completion: nil)
+    }
+
+    
     
     /// Show an alert with an "Okay" button.
     func showSimpleAlert() {
