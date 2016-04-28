@@ -64,17 +64,17 @@ class Etapa4: UIViewController,  UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         // This method is triggered whenever the user makes a change to the picker selection.
         // The parameter named row and component represents what was selected.
-        ingrediente1 = self.pickerData[component][row]
-        ingrediente2 = self.pickerData[component][row]
-        ingrediente3 = self.pickerData[component][row]
-        ingrediente4 = self.pickerData[component][row]
-        ingrediente5 = self.pickerData[component][row]
+        ingrediente1 = pickerData[0][pickerIngredientes.selectedRowInComponent(0)]
+        ingrediente2 = pickerData[1][pickerIngredientes.selectedRowInComponent(1)]
+        ingrediente3 = pickerData[2][pickerIngredientes.selectedRowInComponent(2)]
+        ingrediente4 = pickerData[3][pickerIngredientes.selectedRowInComponent(3)]
+        ingrediente5 = pickerData[4][pickerIngredientes.selectedRowInComponent(4)]
         
     }
     
     override func prepareForSegue(segue5: UIStoryboardSegue, sender: AnyObject?) {
         
-        if (ingrediente1 == ""){
+        if ingrediente1 == "" && ingrediente2 == "" && ingrediente3 == "" && ingrediente4 == "" && ingrediente5 == ""{
             showSimpleAlert()
         }
         else{
@@ -94,7 +94,7 @@ class Etapa4: UIViewController,  UIPickerViewDelegate, UIPickerViewDataSource {
     /// Show an alert with an "Okay" button.
     func showSimpleAlert() {
         let title = NSLocalizedString("Error", comment: "")
-        let message = NSLocalizedString("No se seleciono el tamaño de la pizza", comment: "")
+        let message = NSLocalizedString("No se selecionaron ingredientes para la pizza", comment: "")
         let cancelButtonTitle = NSLocalizedString("OK", comment: "")
         
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
