@@ -100,7 +100,7 @@ class Etapa5: UIViewController {
     
     /// Show an alert with an "Okay" button.
     func showSimpleAlert() {
-        let title = NSLocalizedString("", comment: "")
+        let title = NSLocalizedString("PizzApp", comment: "")
         let message = NSLocalizedString("Tu pizza se esta preparando 🍕😊", comment: "")
         let cancelButtonTitle = NSLocalizedString("OK", comment: "")
         
