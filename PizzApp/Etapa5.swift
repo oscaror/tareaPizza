@@ -18,6 +18,7 @@ class Etapa5: UIViewController {
     var ingrediente3 : String = ""
     var ingrediente4 : String = ""
     var ingrediente5 : String = ""
+    
 
     @IBOutlet weak var tamañoFinal: UILabel!
     @IBOutlet weak var masaFinal: UILabel!
@@ -27,6 +28,10 @@ class Etapa5: UIViewController {
     @IBOutlet weak var confirmar: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let backgroundImage = UIImageView(frame: UIScreen.mainScreen().bounds)
+        backgroundImage.image = UIImage(named: "photo-sep-14-7-40-59-pm_small1.jpg")
+        self.view.insertSubview(backgroundImage, atIndex: 0)
 
         // Do any additional setup after loading the view.
         
@@ -57,8 +62,8 @@ class Etapa5: UIViewController {
     @IBAction func confirmacion() {
         showOkayCancelAlert()
         //showSimpleAlert()
-        confirmar.hidden = true
-        navigationItem.hidesBackButton = true
+        
+        
     }
     
     /// Show an alert with an "Okay" and "Cancel" button.
@@ -78,6 +83,9 @@ class Etapa5: UIViewController {
         let otherAction = UIAlertAction(title: otherButtonTitle, style: .Default) { _ in
             NSLog("The \"Okay/Cancel\" alert's other action occured.")
             self.showSimpleAlert()
+            self.confirmar.hidden = true
+            self.navigationItem.hidesBackButton = true
+
             
         }
         

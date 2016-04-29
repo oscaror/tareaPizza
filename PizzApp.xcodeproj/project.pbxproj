@@ -17,6 +17,7 @@
 		49BE0A831CD167CF00459DAE /* Etapa3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE0A821CD167CF00459DAE /* Etapa3.swift */; };
 		49BE0A851CD16F3000459DAE /* Etapa4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE0A841CD16F3000459DAE /* Etapa4.swift */; };
 		49BE0A871CD17F5200459DAE /* Etapa5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE0A861CD17F5200459DAE /* Etapa5.swift */; };
+		49BE0A8B1CD2BC9900459DAE /* photo-sep-14-7-40-59-pm_small1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49BE0A8A1CD2BC9900459DAE /* photo-sep-14-7-40-59-pm_small1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		49BE0A821CD167CF00459DAE /* Etapa3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Etapa3.swift; sourceTree = "<group>"; };
 		49BE0A841CD16F3000459DAE /* Etapa4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Etapa4.swift; sourceTree = "<group>"; };
 		49BE0A861CD17F5200459DAE /* Etapa5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Etapa5.swift; sourceTree = "<group>"; };
+		49BE0A8A1CD2BC9900459DAE /* photo-sep-14-7-40-59-pm_small1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo-sep-14-7-40-59-pm_small1.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		49BE0A6B1CD149EF00459DAE /* PizzApp */ = {
 			isa = PBXGroup;
 			children = (
+				49BE0A8A1CD2BC9900459DAE /* photo-sep-14-7-40-59-pm_small1.jpg */,
 				49BE0A6C1CD149EF00459DAE /* AppDelegate.swift */,
 				49BE0A6E1CD149EF00459DAE /* ViewController.swift */,
 				49BE0A701CD149F000459DAE /* Main.storyboard */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49BE0A771CD149F000459DAE /* LaunchScreen.storyboard in Resources */,
+				49BE0A8B1CD2BC9900459DAE /* photo-sep-14-7-40-59-pm_small1.jpg in Resources */,
 				49BE0A741CD149F000459DAE /* Assets.xcassets in Resources */,
 				49BE0A721CD149F000459DAE /* Main.storyboard in Resources */,
 			);
