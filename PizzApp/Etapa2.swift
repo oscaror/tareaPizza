@@ -77,7 +77,7 @@ class Etapa2: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     /// Show an alert with an "Okay" button.
     func showSimpleAlert() {
         let title = NSLocalizedString("Error", comment: "")
-        let message = NSLocalizedString("No se seleciono el tamaño de la pizza", comment: "")
+        let message = NSLocalizedString("No se seleciono la masa de la pizza", comment: "")
         let cancelButtonTitle = NSLocalizedString("OK", comment: "")
         
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
