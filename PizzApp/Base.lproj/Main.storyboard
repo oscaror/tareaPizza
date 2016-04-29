@@ -37,12 +37,15 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido a PizzApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdf-Ez-S2k">
                                 <rect key="frame" x="78" y="68" width="165" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hze-1r-6Lx">
-                                <rect key="frame" x="60" y="210" width="200" height="30"/>
-                                <state key="normal" title="Comenzar a crear tu pizza🍕"/>
+                                <rect key="frame" x="49" y="207" width="223" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Comenzar a crear tu pizza🍕">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="RJW-r5-JPE" kind="push" id="gKZ-sv-R7V"/>
                                 </connections>
@@ -77,14 +80,15 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona el tamaño de tu pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SpQ-4X-74D">
                                 <rect key="frame" x="35" y="62" width="251" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ePD-kz-wtJ">
                                 <rect key="frame" x="0.0" y="131" width="320" height="216"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vop-ty-ew4">
-                                <rect key="frame" x="128" y="403" width="64" height="30"/>
+                                <rect key="frame" x="124" y="403" width="72" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Siguiente"/>
                                 <connections>
                                     <segue destination="Pcm-Uv-qBR" kind="push" identifier="" id="mkw-kN-v4g"/>
@@ -126,14 +130,15 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona el tipo de masa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwf-HZ-cbB">
                                 <rect key="frame" x="58" y="39" width="204" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5wL-od-jBc">
                                 <rect key="frame" x="-83" y="119" width="486" height="216"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fQ-ff-AEx">
-                                <rect key="frame" x="128" y="390" width="64" height="30"/>
+                                <rect key="frame" x="124" y="390" width="72" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Siguiente"/>
                                 <connections>
                                     <segue destination="wtt-TU-NpG" kind="push" identifier="segue3" id="Vnt-IB-Ijs"/>
@@ -175,14 +180,15 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona el tipo de queso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEo-nI-aiZ">
                                 <rect key="frame" x="55" y="40" width="210" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dio-Iw-gTk">
                                 <rect key="frame" x="-67" y="132" width="454" height="216"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBF-SW-d6C">
-                                <rect key="frame" x="128" y="397" width="64" height="30"/>
+                                <rect key="frame" x="124" y="397" width="72" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Siguiente"/>
                                 <connections>
                                     <segue destination="22m-by-e7w" kind="push" identifier="segue4" id="9aT-ZX-s9z"/>
@@ -224,30 +230,30 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esta es tu pizza, deseas ordenarla?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ckz-zc-btg">
                                 <rect key="frame" x="31" y="49" width="269" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tamaño" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbQ-Tu-zdB">
                                 <rect key="frame" x="58" y="179" width="61" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Masa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbq-uC-2nN">
                                 <rect key="frame" x="201" y="179" width="41" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLl-ET-xnK">
-                                <rect key="frame" x="68" y="428" width="69" height="30"/>
+                                <rect key="frame" x="60" y="425" width="81" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Confirmar"/>
                                 <connections>
                                     <action selector="confirmacion" destination="lrq-Sy-CCe" eventType="touchUpInside" id="Y90-PX-u7L"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mua-PF-2Gz">
-                                <rect key="frame" x="197" y="428" width="59" height="30"/>
+                                <rect key="frame" x="197" y="425" width="65" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Reiniciar"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="push" id="yfU-x4-n7s"/>
@@ -256,25 +262,23 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whX-5K-ZNq">
                                 <rect key="frame" x="131" y="243" width="50" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ingredientes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONH-1P-S8T">
-                                <rect key="frame" x="16" y="301" width="280" height="21"/>
+                                <rect key="frame" x="16" y="298" width="280" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="mua-PF-2Gz" firstAttribute="leading" secondItem="BLl-ET-xnK" secondAttribute="trailing" constant="60" id="4vj-Nw-vKt"/>
+                            <constraint firstItem="mua-PF-2Gz" firstAttribute="leading" secondItem="BLl-ET-xnK" secondAttribute="trailing" constant="56" id="4vj-Nw-vKt"/>
                             <constraint firstItem="whX-5K-ZNq" firstAttribute="top" secondItem="Ckz-zc-btg" secondAttribute="bottom" constant="173" id="6NF-oq-SLh"/>
                             <constraint firstItem="Hbq-uC-2nN" firstAttribute="leading" secondItem="GbQ-Tu-zdB" secondAttribute="trailing" constant="82" id="8r9-wR-Eyr"/>
                             <constraint firstItem="Ckz-zc-btg" firstAttribute="top" secondItem="Uzs-kR-4Sd" secondAttribute="bottom" constant="29" id="CcM-TD-5ZQ"/>
                             <constraint firstItem="Ckz-zc-btg" firstAttribute="leading" secondItem="Jdf-zf-NTp" secondAttribute="leadingMargin" constant="15" id="EIQ-es-U2M"/>
                             <constraint firstItem="whX-5K-ZNq" firstAttribute="leading" secondItem="Jdf-zf-NTp" secondAttribute="leadingMargin" constant="115" id="FZP-zp-p6B"/>
-                            <constraint firstItem="BLl-ET-xnK" firstAttribute="leading" secondItem="Jdf-zf-NTp" secondAttribute="leadingMargin" constant="52" id="Gue-rU-18t"/>
+                            <constraint firstItem="BLl-ET-xnK" firstAttribute="leading" secondItem="Jdf-zf-NTp" secondAttribute="leadingMargin" constant="44" id="Gue-rU-18t"/>
                             <constraint firstItem="Ckz-zc-btg" firstAttribute="trailing" secondItem="ONH-1P-S8T" secondAttribute="trailing" constant="4" id="H4e-L1-OwV"/>
                             <constraint firstItem="mua-PF-2Gz" firstAttribute="top" secondItem="ONH-1P-S8T" secondAttribute="bottom" constant="106" id="Wp9-qY-UKp"/>
                             <constraint firstItem="mua-PF-2Gz" firstAttribute="leading" secondItem="Jdf-zf-NTp" secondAttribute="leadingMargin" constant="181" id="Y33-9L-rCK"/>
@@ -314,14 +318,15 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona de 1 a 5 ingredientes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSi-Vb-X81">
                                 <rect key="frame" x="37" y="37" width="246" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nz6-QZ-3Wv">
                                 <rect key="frame" x="0.0" y="136" width="320" height="216"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w47-9q-zvZ">
-                                <rect key="frame" x="128" y="385" width="64" height="30"/>
+                                <rect key="frame" x="124" y="385" width="72" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Siguiente"/>
                                 <connections>
                                     <segue destination="lrq-Sy-CCe" kind="push" identifier="segue5" id="m0e-T2-cN3"/>

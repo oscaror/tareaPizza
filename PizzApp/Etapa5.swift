@@ -30,7 +30,7 @@ class Etapa5: UIViewController {
         super.viewDidLoad()
         
         let backgroundImage = UIImageView(frame: UIScreen.mainScreen().bounds)
-        backgroundImage.image = UIImage(named: "photo-sep-14-7-40-59-pm_small1.jpg")
+        backgroundImage.image = UIImage(named: "pizzaImg.jpg")
         self.view.insertSubview(backgroundImage, atIndex: 0)
 
         // Do any additional setup after loading the view.
